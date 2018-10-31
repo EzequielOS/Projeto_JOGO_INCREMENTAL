@@ -4,5 +4,20 @@
          background-image: url("img/dondon.jpg");
          background-clip: border-box;
          font-size: 29px;
-         font-style: bold;
+}
+
+#upgrades {
+	position:absolute;
+	width:140px;
+	top:130px;
+	left:5px;
+	color:pink;
+}
+table#t01 {
+    border: 6px solid black;
+    border-spacing: 0px;
+    padding: 3px;
+    width: 130%;
+    color: black;
+    background-color: white;
 }
