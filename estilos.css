@@ -1,17 +1,21 @@
 
-#placar {border: 10px;
+#placar {
+         position: absolute;
+         border: 10px;
          padding: 15px;
          background-image: url("img/dondon.jpg");
          background-clip: border-box;
          font-size: 29px;
+         bottom: 10px;
+       	 width:97%;
+         height: 10%;
 }
 
 #upgrades {
 	position:absolute;
 	width:140px;
-	top:130px;
+	top:0px;
 	left:5px;
-	color:pink;
 }
 table#t01 {
     border: 6px solid black;
@@ -20,4 +24,28 @@ table#t01 {
     width: 130%;
     color: black;
     background-color: white;
+}
+#timer {
+	position:absolute;
+	width:140px;
+	top:0px;
+	right:50px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 30;
+  font-family: Chalkduster, fantasy;
+}
+table#t02 {
+    border: 6px dotted black;
+    border-spacing: 0px;
+    padding: 3px;
+    width: 130%;
+    color: black;
+    background-color: white;
+}
+#font{
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  font-family: Chalkduster, fantasy;
 }

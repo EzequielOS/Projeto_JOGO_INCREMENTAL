@@ -11,18 +11,33 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body onload="inicioJogo()">
-        <div id=placar>
-          <p align=center id="pontos"><strong>PLACAR</strong></p>
-  </div>
-<p align=center><img id="image" onclick = "placarPontos()" src="img/donuts.jpg"><img id="homer" src="img/homer_001.jpg"></p>
+    <div id="font">
+      <p align=center id="pontos"><strong>PLACAR</strong></p>
+    </div>
+
+  <p align=center><img id="image" onclick = "placarPontos()" src="img/donuts.jpg"><img id="homer" src="img/homer_001.jpg">
+
+  <audio id="somHomer">
+      <source src="ouch.ogg" type="audio/ogg">
+      <source src="ouch.mp3" type="audio/mp3">
+  </audio></p>
 
 <div id="upgrades">
   <table id="t01">
     <tr><th><p>UPGRADES: </p><br></th></tr>
-    <tr><th><p>Requer 20 pts.<img onclick= "upgradeum()" id="upgrade1" src="img/donuts_upgrade_000.jpg" height="92" width="92" title="Gera 1 donut a cada 20 segundos."></p></th></tr>
-    <tr><th><p>Requer 250 pts.<img  onclick= "upgradedois()" id="upgrade2" src="img/donuts_upgrade_000.jpg" height="92" width="92" title="Gera 1 donut a cada 1 segundo."></p></tr>
-    <tr><th><p>Requer 500 pts.<img   onclick= "upgradetres()" id="upgrade3" src="img/donuts_upgrade_000.jpg" height="92" width="92" title="Gera 5 donut's a cada 10 segundos."></p></th></tr>
+    <tr><th><p>Requer 20 pts.<img id="upgrade1" src="img/donuts_upgrade_000.jpg" height="92" width="92" title="Gera 1 donut a cada 20 segundos."></p></th></tr>
+    <tr><th><p>Requer 50 pts.<img id="upgrade2" src="img/donuts_upgrade_000.jpg" height="92" width="92" title="Gera 1 donut a cada 1 segundo."></p></tr>
+    <tr><th><p>Requer 70 pts.<img id="upgrade3" src="img/donuts_upgrade_000.jpg" height="92" width="92" title="Gera 5 donut's a cada 10 segundos."></p></th></tr>
   </table>
+</div>
+
+<div id="timer">
+  <table id="t02">
+    <tr><th><p id="tempo">MIN : SEG</p><br></th></tr>
+    </table>
+</div>
+  <div id="placar">
+    <p></p>
   </div>
 </body>
 </html>
