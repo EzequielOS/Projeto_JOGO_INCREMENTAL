@@ -29,15 +29,17 @@ function placarPontos(){
     setTimeout(function(){  document.getElementById('homer').src = "img/homer_001.jpg"; }, 100);
     var som = document.getElementById("somHomer");
     som.play();
+    console.log(pontos);
 }
 
 function upgradeTempo3(){
   pontos += autoclique3;
+  console.log(pontos);
 }
 
 function upgradeTempo(){
-	pontos += autoclique;
-  document.getElementById("pontos").innerHTML = "Seus Donuts: "+pontos;
+    pontos += autoclique;
+    console.log(pontos);
 }
 
 function upgradeum(){
@@ -59,15 +61,9 @@ function cronometro() {
     if (segundos >= 60) {
       segundos = 0;
       minutos++;
-}
+    }
     if (minutos >=60) {
       minutos = 0;
     }
-    if (segundos < 10) {
-      document.getElementById("tempo").innerHTML = "0"+minutos+":0"+segundos;
-}else if(minutos < 10){
-      document.getElementById("tempo").innerHTML = "0"+minutos+":"+segundos;
-}else {
-      document.getElementById("tempo").innerHTML = minutos+":"+segundos;
-}
+    document.getElementById("tempo").innerHTML = (minutos<10?"0"+minutos:minutos)+":"+(segundos<10?"0"+segundos:segundos);
 }
