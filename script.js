@@ -1,6 +1,6 @@
 var pontos = 0;
 var autoclique = 1;
-autoclique3 = 0;
+var autoclique3 = 0;
 var upgrades = [false, false, false];
 var segundos = 0;  var minutos = 0;
 
@@ -29,17 +29,14 @@ function placarPontos(){
     setTimeout(function(){  document.getElementById('homer').src = "img/homer_001.jpg"; }, 100);
     var som = document.getElementById("somHomer");
     som.play();
-    console.log(pontos);
 }
 
 function upgradeTempo3(){
   pontos += autoclique3;
-  console.log(pontos);
 }
 
 function upgradeTempo(){
     pontos += autoclique;
-    console.log(pontos);
 }
 
 function upgradeum(){
